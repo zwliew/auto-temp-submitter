@@ -18,5 +18,5 @@ Requires the following environment variables:
 Command to run the script:
 
 ```bash
-deno run --allow-read --allow-env --allow-net .\submit-temps.ts
+deno run --unstable --allow-read --allow-env --allow-net submit-temps.ts
 ```

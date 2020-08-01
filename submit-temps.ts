@@ -1,6 +1,8 @@
 import { delay } from "https://deno.land/std/async/delay.ts";
 import { config } from "https://deno.land/x/dotenv/mod.ts";
 
+console.log("Starting Temperature Submitter");
+
 const MSEC_PER_HOUR = 24 * 60 * 60 * 1000;
 const GMT8_OFFSET_MSEC = 8 * 60 * 60 * 1000;
 
@@ -22,7 +24,7 @@ startService(
 
 function countHourDiff(from: number, to: number): number {
   const diff = to - from;
-  return diff + (diff < 0 ? 24 : 0);
+  return diff + (diff <= 0 ? 24 : 0);
 }
 
 async function startService(ms: number, date: Date, isAm: boolean) {
