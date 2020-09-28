@@ -1,0 +1,5 @@
+.env.example
+Dockerfile
+.dockerignore
+README.md
+start.sh

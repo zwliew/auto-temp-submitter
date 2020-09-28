@@ -1,14 +1,8 @@
-# Miscellaneous scripts
-
-A collections of miscellaneous scripts to improve my lifestyle.
-
-## Available scripts
-
-1. [Temperature submitter](#temperature-submitter)
-
-## Temperature submitter
+# Temperature submitter
 
 A Deno script that automatically submits temperatures.
+
+Requires [Docker Engine](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/).
 Requires the following environment variables:
 
 - PIN
@@ -18,5 +12,5 @@ Requires the following environment variables:
 Command to run the script:
 
 ```bash
-deno run --unstable --allow-read --allow-env --allow-net submit-temps.ts
+docker-compose up --build
 ```

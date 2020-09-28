@@ -1,5 +1,4 @@
-import { delay } from "https://deno.land/std/async/delay.ts";
-import { config, DotenvConfig } from "https://deno.land/x/dotenv/mod.ts";
+import { config, DotenvConfig, delay } from "./deps.ts";
 
 interface Config {
   pin: string;
