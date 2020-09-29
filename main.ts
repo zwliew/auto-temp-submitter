@@ -61,7 +61,7 @@ async function submitTempDelayed(ms: number, date: Date, isAm: boolean) {
   await delay(ms);
 
   for (let cfg of cfgs) {
-    const params: any = {
+    const params: { [key: string]: string } = {
       meridies: isAm ? "AM" : "PM",
       memberId: cfg.memberId,
       pin: cfg.pin,
