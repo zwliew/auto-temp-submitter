@@ -1,4 +1,4 @@
-FROM hayd/alpine-deno:1.4.2
+FROM hayd/alpine-deno:1.8.0
 WORKDIR /usr/src/app
 USER deno
 COPY deps.ts ./
